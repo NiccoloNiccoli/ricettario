@@ -1,0 +1,10 @@
+---
+layout: default
+---
+
+<div id="about-site">
+    {{content}}
+</div>
+
+{% assign recipes = site.posts | sort: "name" %}
+{% include recipes.html recipes = recipes %}

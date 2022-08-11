@@ -1,0 +1,9 @@
+---
+title: Ricette straniere
+---
+
+<div class="section-title">
+    <h2>Ricette giapponesi</h2>
+</div>
+{% assign recipes = site.posts| where_exp:"item", "item.categories contains 'foreign'" | where_exp:"item", "item.categories contains 'japan'" | sort: "name" %}
+{% include recipes.html recipes = recipes %}

@@ -1,0 +1,11 @@
+<div class="recipes-list">
+    {% for recipe in include.recipes %}
+    <h3 class="recipe-title">
+        <a href="{{ recipe.url}}">{{ recipe.name}}</a>
+    </h3>
+    <p class="recipe-description">
+        {{ recipe.description}}
+    </p>
+
+    {% endfor %}
+</div>

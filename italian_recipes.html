@@ -1,0 +1,15 @@
+---
+title: Ricette italiane
+---
+
+
+<div class="section-title">
+    <h2>Ricette toscane</h2>
+</div>
+{% assign recipes = site.posts | where_exp:"item", "item.categories contains 'italy'" | where_exp:"item", "item.categories contains 'tuscany'" | sort: "name" %}
+{% include recipes.html recipes = recipes %}
+<div class="section-title">
+<h2>Ricette campane</h2>
+</div>
+{% assign recipes = site.posts | where_exp:"item", "item.categories contains 'italy'" | where_exp:"item", "item.categories contains 'campania'" | sort: "name" %}
+{% include recipes.html recipes = recipes %}
