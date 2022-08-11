@@ -1,5 +1,5 @@
 <nav id="navbar-links">
     {% for item in site.data.navigation %}
-    <a href="ricettario/{{ item.link }}" {% if page.url == item.link %}class="current"{%else%} class="other-links"{% endif %}>{{ item.name }}</a>
+    <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{%else%} class="other-links"{% endif %}>{{ item.name }}</a>
     {% endfor %}
 </nav>
