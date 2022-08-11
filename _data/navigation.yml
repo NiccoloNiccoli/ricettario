@@ -1,6 +1,6 @@
 - name: Home
-  link:
+  link: /
 - name: Ricette italiane
-  link: italian_recipes.html
+  link: /italian_recipes.html
 - name: Ricette straniere
-  link: foreign_recipes.html
+  link: /foreign_recipes.html

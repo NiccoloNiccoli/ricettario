@@ -1,6 +1,7 @@
 title: Le ricette di Niccolò
 email: niccoloniccoli7@gmail.com
 description: Sito di ricette
+baseurl: niccoloniccoli.github.io/ricettario
 
 collections:
   authors:
