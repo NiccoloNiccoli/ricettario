@@ -38,6 +38,11 @@ body{
 }
 .navbar-container h1{
   text-align: center;
+  margin:1% 0;
+}
+#title-link:link, #title-link:visited{
+  text-decoration: none;
+  color: var(--black);
 }
 #navbar-links{
   float: right;
@@ -59,7 +64,7 @@ body{
   text-align: center;
 }
 
-.section-container{
+.section-container, .recipes-list{
   background: var(--yellow);
   margin: 1% 0 1% 0;
   padding: 1%;
@@ -105,4 +110,49 @@ img + br + em{
 
 #footer{
   background: var(--cyan);
+}
+
+#main-content, #post-header, #about-site{
+  background-color: rgba(251, 203, 10, 0.4);
+  padding: 1%;
+  margin-top:1%;
+  margin-bottom:1%;
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 768px){
+  body{
+    background-size: 75%;
+  }
+  #navbar{
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar-container{
+    width: 100%;
+  }
+  .navbar-container:first-child{
+    position: absolute;
+    top:0;
+    left:0;
+    margin:1%;
+    width: 20%;
+  }
+  #navbar-links{
+    text-align: center;
+    float: none;
+  }
+}
+@media only screen and (max-width: 525px){
+  body{
+    background-size: 100%;
+  }
+  .navbar-container:first-child{
+    display: none;
+  }
+}
+@media only screen and (max-width: 320px){
+  #navbar-links a:link, #navbar-links a:visited{
+    font-size: 0.9rem;
+  }
 }
